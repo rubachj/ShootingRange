@@ -1,0 +1,46 @@
+.hours-picker {
+    width: 600px;
+    padding: 10px;
+    border: 2px #B71C1C solid;
+    border-radius: 10px;
+    background-color: #2E2E2E;
+}
+
+.hours {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hours-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hour {
+    text-align: center;
+    border: 1px #FFFFFF solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+}
+
+.hour:hover {
+    background-color: #C62828;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: #AAAAAA;
+    pointer-events: none;
+}
+
+.disabled:hover {
+    background-color: #AAAAAA;
+}
+
+.selected {
+    background-color: black;
+}

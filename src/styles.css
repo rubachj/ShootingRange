@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+form {
+    width: fit-content;
+    height: fit-content;
+    border: 2px #B71C1C solid;
+    border-radius: 10px;
+}
+
+.form-title {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px #B71C1C solid;
+}
+
+.form-body {
+    padding: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.form-buttons-group {
+    display: flex;
+    justify-content: center;
+}
+
+form button {
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .5s background-color;
+}
+
+form button:disabled {
+    background-color: #AAAAAA;
+    cursor: default;
+}
+
+form button:disabled:hover {
+    background-color: #AAAAAA;
+    cursor: default;
+}
+
+form button:hover {
+    background-color: #D32F2F;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    padding: 3px;
+    border-radius: 10px;
+}

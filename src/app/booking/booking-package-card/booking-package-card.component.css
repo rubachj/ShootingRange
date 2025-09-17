@@ -1,0 +1,44 @@
+.package-card {
+    background-color: #2E2E2E;
+    border: 2px #B71C1C solid;
+    border-radius: 10px;
+    width: 400px;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.package-card-body {
+  padding: 10px;
+}
+
+.title {
+   text-align: center; 
+   font-size: 25px;
+   border-bottom: 2px #B71C1C solid;
+   padding: 10px;
+}
+
+.additional-info {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.time-price-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-image: url('/assets/images/bullet.png');
+  background-repeat: no-repeat;
+  background-position: 0 -3px;
+  padding: 0px 30px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}

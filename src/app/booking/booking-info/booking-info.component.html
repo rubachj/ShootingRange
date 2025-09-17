@@ -1,0 +1,33 @@
+<form [formGroup]="bookingInfoForm" (ngSubmit)="submit()">
+    <div class="form-title">
+        Podstawowe Informacje
+    </div>
+    <div class="form-body">
+        <div class="form-group">
+            <label for="name">Imię:</label>
+            <input id="name" formControlName="name" type="text" placeholder="Wprowadź imię." />
+        </div>
+        <div class="form-group">
+            <label for="surname">Nazwisko:</label>
+            <input id="surname" formControlName="surname" type="text" placeholder="Wprowadź nazwisko." />
+        </div>
+        <div class="form-group">
+            <label for="email">Adres email:</label>
+            <input id="email" formControlName="email" type="text" placeholder="Wprowadź adres email." />
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Numer telefonu:</label>
+            <input id="phoneNumber" formControlName="phoneNumber" type="tel" placeholder="Wprowadź numer telefonu." />
+        </div>
+        <div class="form-group">
+            <label for="additionalInfo">Dodatkowe informacje:</label>
+            <textarea id="additionalInfo" formControlName="additionalInfo" rows="4" cols="50"
+                placeholder="Wprowadź dodatkowe informacje.">
+            </textarea>
+        </div>
+        <div class="form-buttons-group">
+            <button (click)="clearForm()" [disabled]="isDirty()">Wyczyść</button>
+            <button type="submit" [disabled]="isValid()">Wyślij</button>
+        </div>
+    </div>
+</form>

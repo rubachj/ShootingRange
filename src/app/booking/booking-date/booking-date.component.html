@@ -1,0 +1,5 @@
+<div class="booking-date mt-10">
+    <app-calendar (selectedDateEvent)="handleSelectedDate($event)" [calendarOption]="calendarOption"></app-calendar>
+    <app-hour-picker class="ml-10" (selectedHourEvent)="handleSelectedHour($event)"
+        [hourPickerOptions]="hourPickerOptions"></app-hour-picker>
+</div>

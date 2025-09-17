@@ -1,0 +1,21 @@
+nav{
+    background-color: #3A3A3A;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+a {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px black dotted;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #AAAAAA;
+    transition: background-color 2s;
+}
+
+a:hover {
+ background-color: #C62828;
+}

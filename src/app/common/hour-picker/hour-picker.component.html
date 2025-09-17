@@ -1,0 +1,10 @@
+<div class="hours-picker">
+    <div class="hours-title">
+        Wybierz godzinę:
+    </div>
+    <div class="hours">
+        <div class="hour" [ngClass]="{'disabled': isDisabled(hour), 'selected': isSelected(hour)}" (click)="selectHour(hour)" *ngFor="let hour of hourPickerOptions.hours">
+            {{hour}}
+        </div>
+    </div>
+</div>
